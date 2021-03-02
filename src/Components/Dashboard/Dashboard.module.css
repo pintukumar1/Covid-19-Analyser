@@ -1,0 +1,53 @@
+.heading {
+  margin-left: 5%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+
+.mapCard {
+  background-color: white;
+  border-radius: 0.6rem;
+  padding: 1%;
+  text-align: center;
+}
+
+.dashboard {
+  background-color: #f4f4f4;
+  padding: 2%;
+  margin: 0;
+}
+
+.LocationOnIcon {
+  color: yellow;
+  background-color: black;
+  border-radius: 0.5rem;
+  padding: 1%;
+}
+
+.tableDiv {
+  overflow-y: scroll;
+  height: 70vh;
+}
+
+.chartsDiv {
+  margin: 2rem 0;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.titleHeadingDiv h3,
+.titleHeadingDiv p {
+  margin: 0.5rem 0.5rem;
+}
+
+.subTitleHeadingDiv h3 {
+  margin: 0.5rem 0;
+}
