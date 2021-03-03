@@ -1,8 +1,8 @@
 import React from "react";
 import DonutChart from 'react-donut-chart';
-import LineChart from 'react-linechart';
 import {Grid} from "@material-ui/core";
 import classes from "./DonutLineChart.module.css";
+import LineChart from './Linechart';
 
 const DonutLineChart = () => {
     return(
@@ -29,12 +29,12 @@ const DonutLineChart = () => {
     }]} />
             </Grid>
             <Grid xs={12} sm={6}>
-            <LineChart />
+                <div>
+                <LineChart />
+                </div>
             </Grid>
-        </Grid>
-        
+        </Grid>        
     )
-
 }
 
 export default DonutLineChart;

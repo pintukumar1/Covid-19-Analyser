@@ -1,3 +1,7 @@
 .donutChart {
   padding: 2%;
 }
+
+.LineChart {
+  position: relative;
+}

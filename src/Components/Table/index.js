@@ -10,12 +10,11 @@ const TableComponent = () => {
     const fetchCases = async() => {
         const response = await axios.get("https://api.covid19india.org/data.json");
         setStates(response?.data?.statewise);
-        console.log(response.data.statewise)
     }
 
     useEffect(() => {
         fetchCases();
-    },[]);
+    },[states]);
 
     return(
         <Table className={classes.table}>
@@ -25,7 +24,7 @@ const TableComponent = () => {
           <Th  className={classes.heading}>CONFIRMED</Th>
           <Th  className={classes.heading}>ACTIVE</Th>
           <Th  className={classes.heading}>RECOVERED</Th>
-          <Th  className={classes.heading}>DECREASED</Th>
+          <Th  className={classes.heading}>DECEASED</Th>
         </Tr>
       </Thead>
       <Tbody>
