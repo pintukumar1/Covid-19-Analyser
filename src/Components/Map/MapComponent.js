@@ -44,7 +44,7 @@ const geographyStyle = {
 function MapComponent() {
   const [tooltipContent, setTooltipContent] = useState('');
   const [data, setData] = useState([]);
-  const [mapId,setMapId] = useState("");
+  const [mapId,setMapId] = useState(null);
   const colorScale = scaleQuantile()
     .domain(data.map(d => d.value))
     .range(COLOR_RANGE);
@@ -69,11 +69,12 @@ function MapComponent() {
 
   const onMouseLeave = () => {
     setTooltipContent('');
+    setMapId(null)
   };
 
   return (
     <div className={classes.mapDiv}>
-      {mapId && <Map id={mapId}/>}
+      <Map id={mapId}/>
       <h1 className="no-margin center">States and UTs</h1>
       <ReactTooltip>{tooltipContent}</ReactTooltip>
         <ComposableMap

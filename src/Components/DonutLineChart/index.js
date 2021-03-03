@@ -6,11 +6,11 @@ import LineChart from './Linechart';
 
 const DonutLineChart = () => {
     return(
-        <Grid container spacing={3} className={classes.donutChart}>
+        <Grid container spacing={5} className={classes.donutChart}>
             <Grid xs={12} sm={6}>
             <DonutChart
-            width={400}
-            height={300}
+            width={350}
+            height={250}
             data={[
                 {
         label: 'Active',
