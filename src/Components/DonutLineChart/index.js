@@ -6,7 +6,7 @@ import LineChart from './Linechart';
 
 const DonutLineChart = () => {
     return(
-        <Grid container spacing={5} className={classes.donutChart}>
+       <Grid container spacing={5} className={classes.donutChart}>
             <Grid xs={12} sm={6}>
             <DonutChart
             width={350}

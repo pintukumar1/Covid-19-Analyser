@@ -2,6 +2,8 @@ import React from "react";
 import Grid from '@material-ui/core/Grid';
 import classes from './Map.module.css';
 import axios from "axios"
+
+
 const Map = (props) => {
     const [active,setActive] = React.useState(0);
     const [confirmed,setConfirmed] = React.useState(0);
@@ -30,6 +32,7 @@ const Map = (props) => {
       React.useEffect(() => {
         fetchData();
       },[props])
+
     return (
         <Grid container spacing={1}>
             <Grid item sm={3} xs={6} >

@@ -14,12 +14,15 @@ code {
 
 .recoveredClass {
   fill: green;
+  font-size: small;
 }
 
 .activeClass {
-  fill: blue;
+  fill:blue;
+  font-size: small;
 }
 
 .deceasedClass {
-  fill: gray;
+  fill: red;
+  font-size: small;
 }

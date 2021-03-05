@@ -5,3 +5,7 @@
 .LineChart {
   position: relative;
 }
+
+.font{
+  font-size: small;
+}
