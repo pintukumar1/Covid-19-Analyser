@@ -4,7 +4,7 @@ import {Grid} from "@material-ui/core";
 import classes from "./DonutLineChart.module.css";
 import LineChart from './Linechart';
 
-const DonutLineChart = () => {
+const DonutLineChart = (props) => {
     return(
        <Grid container spacing={5} className={classes.donutChart}>
             <Grid xs={12} sm={6}>

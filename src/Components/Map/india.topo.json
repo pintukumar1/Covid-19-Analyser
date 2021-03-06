@@ -119,7 +119,7 @@
           },
           {
             "type": "Polygon",
-            "id": "TN",
+            "id": "TG",
             "properties": { "name": "Telangana" },
             "arcs": [[-37, 78, -18, 79, 80]]
           },
